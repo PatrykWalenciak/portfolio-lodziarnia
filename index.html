@@ -3,19 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./photos/logo.jpg" type="image/jpg" />
     <title>Lodziarnia "Lodowy Raj"</title>
   </head>
   <body>
     <header>
-      <div class="menu">
-        <li>Strona Główna</li>
-        <li>Menu</li>
-        <li>Zdjęcia</li>
-        <li>Gdzie nas znaleźć</li>
-        <li>O nas</li>
-      </div>
+      <nav>
+        <a class="logo" href="./index.html"
+          >Lodziarnia <span>Lodowy Raj</span></a
+        >
+        <ul>
+          <li class="link-nav"><a href="./index.html">Strona Główna</a></li>
+          <li class="link-nav"><a href="#menu">Menu</a></li>
+          <li class="link-nav"><a href="#galeria">Galeria</a></li>
+          <li class="link-nav"><a href="#onas">O nas</a></li>
+          <li class="link-nav"><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section id="menu" class="section-title">
+        <h2>Menu</h2>
+        <ul class="menu-list">
+          <li><strong>Gałka lodów tradycyjnych:</strong> 5 zł</li>
+          <li><strong>Gałka lodów premium:</strong> 6 zł</li>
+          <li><strong>Deser lodowy z owocami:</strong> 15 zł</li>
+          <li><strong>Shake lodowy:</strong> 12 zł</li>
+          <li><strong>Wafel z bitą śmietaną i polewą:</strong> 10 zł</li>
+          <li><strong>Lody w pucharku:</strong> 14 zł</li>
+          <li><strong>Deser lodowy XXL:</strong> 22 zł</li>
+        </ul>
+      </section>
+      <section id="galeria" class="section-title">
+        <h2>Galeria</h2>
+        <div class="gallery">
+          <img src="./photos/lody1.jpg" alt="Kolorowe gałki lodów" />
+          <img src="./photos/lody2.jpg" alt="Lody w wafelku" />
+          <img src="./photos/lody3.jpg" alt="Deser lodowy" />
+          <img src="./photos/lody4.jpg" alt="Lody w kubeczku" />
+        </div>
+      </section>
+      <section id="onas" class="section-title">
+        <h2>O nas</h2>
+        <p>
+          Witamy w "Lodowym Raju" – wyjątkowej lodziarni położonej w samym sercu
+          wrocławskiego Rynku! Od lat serwujemy naszym gościom pyszne,
+          rzemieślnicze lody w tradycyjnych i autorskich smakach. Wykorzystujemy
+          wyłącznie naturalne składniki, świeże owoce i sprawdzone receptury.
+          Nasze miejsce to idealna przestrzeń na chwilę słodkiego relaksu –
+          zarówno latem, jak i zimą. Przyjdź, skosztuj i poczuj smak prawdziwej
+          przyjemności!
+        </p>
+        <div>
+          <address id="contact" class="address-section">
+            <ul>
+              <li class="address-text">
+                <a href="mailto:lodowyraj@.pl">lodowyraj@.pl</a>
+              </li>
+              <li class="address-text">
+                <a href="tel:+123330219887">+12 333 021-98-87</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+      <section id="" class="section-title">
+        <h2>Gdzie nas znaleźć</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2106.356176984463!2d17.028742886632728!3d51.11042043609479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e40c57467f87b%3A0xe72be8d8d320d5d8!2sWroc%C5%82awski%20Rynek!5e0!3m2!1spl!2spl!4v1752064465785!5m2!1spl!2spl"
+            width="100%"
+            height="350"
+            style="border: 0"
+            ;
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="section-footer">
+      <a class="logo" href="./index.html">Lodziarnia <span>Lodowy Raj</span></a>
+      <p>Wszelkie prawa zastrzeżone &copy 2025</p>
+    </footer>
   </body>
 </html>

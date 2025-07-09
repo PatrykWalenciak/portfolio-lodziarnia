@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-title {
+    padding: 16px;
+    font-size: 1.5rem;
+  }
+
+  .menu-list li {
+    font-size: 1rem;
+  }
+
+  .address-text a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #aeebd9;
+  color: #6b4226;
+  line-height: 1.6;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6b4226;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ffc0cb;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.link-nav a {
+  text-decoration: none;
+  color: #6b4226;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link-nav a:hover {
+  color: #ffc0cb;
+}
+
+.section-title {
+  padding: 4rem 2rem;
+  background-color: #d0f0fd;
+  text-align: center;
+  font-size: 2rem;
+  color: #6b4226;
+  border-bottom: 4px solid #ffc0cb;
+}
+
+.address-section {
+  background-color: #faebcd;
+  padding: 1rem 2rem;
+}
+
+.address-text a {
+  color: #6b4226;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.address-text a:hover {
+  text-decoration: underline;
+}
+
+.section-footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #6b4226;
+  border-top: 2px solid #ffc0cb;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3 ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.map-container {
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
