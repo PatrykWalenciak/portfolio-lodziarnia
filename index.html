@@ -11,6 +11,7 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="./photos/logo.jpg" type="image/jpg" />
     <title>Lodziarnia "Lodowy Raj"</title>
   </head>
@@ -42,7 +43,7 @@
           <li><strong>Deser lodowy XXL:</strong> 22 zł</li>
         </ul>
       </section>
-      <section id="galeria" class="section-title">
+      <section id="galeria" class="section-title" data-aos="fade-up">
         <h2>Galeria</h2>
         <div class="gallery">
           <img src="./photos/lody1.jpg" alt="Kolorowe gałki lodów" />
@@ -75,7 +76,7 @@
           </address>
         </div>
       </section>
-      <section id="" class="section-title">
+      <section id="location" class="section-title">
         <h2>Gdzie nas znaleźć</h2>
         <div class="map-container">
           <iframe
@@ -95,5 +96,10 @@
       <a class="logo" href="./index.html">Lodziarnia <span>Lodowy Raj</span></a>
       <p>Wszelkie prawa zastrzeżone &copy 2025</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
